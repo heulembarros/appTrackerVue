@@ -23,7 +23,7 @@
 import { defineComponent, PropType } from "vue";
 import CronometroTimer from "./CronometroTimer.vue";
 import DataTask from "./DataTask.vue";
-import ITarefa from "./interfaces/ITarefa";
+import ITarefa from "../interfaces/ITarefa";
 export default defineComponent({
   name: "ItemTarefa",
   components: {

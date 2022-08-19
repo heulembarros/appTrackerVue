@@ -8,6 +8,8 @@
     />
   </div>
   <div class="lista" v-else>
+    <section>
+      <h1 class="title">Tarefas</h1>
     <div class="box has-text-weight-bold notification is-warning is-light">
       <div class="columns">
         <div class="column">
@@ -20,6 +22,7 @@
         </div>
       </div>
     </div>
+    </section>
   </div>
 </template>
 
@@ -27,7 +30,7 @@
 import { defineComponent } from "vue";
 import FormTracker from "../components/FormTracker.vue";
 import ItemTarefa from "../components/ItemTarefa.vue";
-import ITarefa from "../components/interfaces/ITarefa";
+import ITarefa from "../interfaces/ITarefa";
 
 export default defineComponent({
   name: "App",
@@ -54,7 +57,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.lista {
+section, .lista {
   padding: 1.25rem;
 }
 </style>
