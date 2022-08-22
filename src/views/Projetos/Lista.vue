@@ -41,18 +41,25 @@
 </template>
 
 <script lang="ts">
+import { TipoNotificacao } from "@/interfaces/INotificacao";
 import { useStore } from "@/store";
-import { EXCLUIR_PROJETO } from "@/store/tipo-mutacoes";
+import { EXCLUIR_PROJETO, NOTIFICAR } from "@/store/tipo-mutacoes";
 import { computed, defineComponent } from "vue";
 export default defineComponent({
   name: "ListaProjetosTacker",
   components: {},
   data() {
-    return {};
+    return {
+    };
   },
   methods: {
     excluir(id: string) {
       this.store.commit(EXCLUIR_PROJETO, id)
+        this.store.commit(NOTIFICAR, {
+          titulo: "Excluido",
+          texto: "O projeto foi excluido!",
+          tipo: TipoNotificacao.FALHA
+        })      
     },
   },
   computed: {

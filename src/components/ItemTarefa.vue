@@ -1,7 +1,8 @@
 <template>
   <div class="box has-text-weight-bold notification is-warning is-light">
     <div class="columns">
-      <div class="column is-7">{{ tarefa.descricao }}</div>
+      <div class="column is-4">{{ tarefa.descricao }}</div>
+      <div class="column is-3">{{ tarefa.projeto?.nome || 'N/D' }}</div>
       <div class="column">
         <span class="icon-text is-pulled-right">
           <span class="icon">
