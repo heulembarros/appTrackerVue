@@ -43,6 +43,7 @@
 <script lang="ts">
 import { TipoNotificacao } from "@/interfaces/INotificacao";
 import { useStore } from "@/store";
+import { GET_PROJETOS } from "@/store/tipo-acoes";
 import { EXCLUIR_PROJETO, NOTIFICAR } from "@/store/tipo-mutacoes";
 import { computed, defineComponent } from "vue";
 export default defineComponent({
@@ -69,6 +70,9 @@ export default defineComponent({
   },
   setup() {
     const store = useStore();
+
+    store.dispatch(GET_PROJETOS)
+
     return {
       projetos: computed(() => store.state.projetos),
       store,

@@ -1,7 +1,7 @@
 <template>
-  <section class="mr-3">
+  <span class="mr-3">
     <strong> {{dataDaTarefa}} </strong>
-  </section>
+  </span>
 </template>
 
 <script lang="ts">
