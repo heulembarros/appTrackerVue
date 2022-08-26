@@ -5,3 +5,5 @@ export const EXCLUIR_PROJETO = 'EXCLUIR_PROJETO'
 export const NOTIFICAR = 'NOTIFICAR'
 
 export const GET_PROJETO = 'GET_PROJETO'
+export const GET_TAREFAS = 'GET_TAREFAS'
+export const ADD_TAREFAS = 'ADD_TAREFAS'

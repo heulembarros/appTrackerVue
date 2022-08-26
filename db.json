@@ -11,7 +11,48 @@
     {
       "id": 3,
       "nome": "Pausa para o Café"
+    },
+    {
+      "id": 4,
+      "nome": "Reunião de Alinhamento"
+    }
+  ],
+  "tarefas": [
+    {
+      "id": 1,
+      "duracaoEmSegundos": 120,
+      "descricao": "Configuração do Ambiente",
+      "projeto": {
+        "id": 1,
+        "nome": "Alura Tracker"
+      }
+    },
+    {
+      "id": 2,
+      "duracaoEmSegundos": 20,
+      "descricao": "Teste do Ambiente",
+      "projeto": {
+        "id": 1,
+        "nome": "Alura Tracker"
+      }
+    },
+    {
+      "duracaoEmSegundos": 2,
+      "descricao": "Definir metas",
+      "projeto": {
+        "id": 1,
+        "nome": "Alura Tracker"
+      },
+      "id": 3
+    },
+    {
+      "duracaoEmSegundos": 10,
+      "descricao": "Refatorar Projetos",
+      "projeto": {
+        "id": 4,
+        "nome": "Reunião de Alinhamento"
+      },
+      "id": 4
     }
   ]
-
 }
